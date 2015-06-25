@@ -1,0 +1,9 @@
+{% extends "base.rss" %}
+
+{% block title %}
+	Canal RSS de {{ usrname }}
+{% endblock %}
+{% block description %}
+	Mis actividades
+{% endblock %}
+

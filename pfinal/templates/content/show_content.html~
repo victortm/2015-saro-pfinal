@@ -1,0 +1,18 @@
+{% extends "lime/index.html" %}
+
+{% block content %}
+    sdoadpka
+    <form action="" method=Post>
+    Search: <input name=searchquery type=textsize=70 maxlength=88>
+    <input name=myBtn type=submit> <br><br> Search In: <select name=filter1>
+    <option value=Whole Site>Whole Site</option>
+    <option value=Pages>Pages</option>
+    <option value=Blog>Blog</option> </select> </form>
+
+    {% for event in events %}
+        <a href="actividad/{{ event.id }}">{{ event.title }}</p>
+		<form action="" method="Post">
+        <input type="submit" name="{{ event.picked }}" value="Add" /></p>
+    {% endfor %}
+	
+{% endblock %}

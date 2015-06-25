@@ -1,0 +1,8 @@
+from django.contrib import admin
+from models import activitie
+from models import myacc
+
+# Register your models here.
+
+admin.site.register(activitie)
+admin.site.register(myacc)

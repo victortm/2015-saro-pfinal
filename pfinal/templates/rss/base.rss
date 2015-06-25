@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <description>
+        {% block description %}
+        {% endblock %}
+    </description>
+    {% for event in events %}
+        <item>
+        <title> {{ event.title }} </title>
+        <description>
+            El coste de la actividad es {{ event.cost }}
+            Comienza a las {{ event.time }} el día {{ event.date }}
+            Larga duración: 
+        </description>
+        </item>
+    {% endfor %}
+</channel>
+        

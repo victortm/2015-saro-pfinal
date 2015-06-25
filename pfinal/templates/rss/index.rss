@@ -1,0 +1,9 @@
+{% extends "rss/base.rss" %}
+
+{% block title %}
+	Canal RSS de la página principal
+{% endblock %}
+{% block description %}
+	Listado de las 10 actividades más próximas
+{% endblock %}
+
